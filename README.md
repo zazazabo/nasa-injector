@@ -32,4 +32,5 @@ they can become apparent easily. Since the CPU is constantly executing the cheat
 
 # Credit
 [ChaosLeader](https://www.unknowncheats.me/forum/members/168188.html) - no_gui is a cleaned up version of this renderer
+
 [JustasMasiulis](https://github.com/JustasMasiulis/lazy_importer) - no_import.h is lazy importer
