@@ -19,3 +19,9 @@ to point to the internal.dll entry point.
 This makes it so when you stream the game in discord or OBS the rendering is stream proof because we draw after discord and OBS captures the screen.
 
 <img src="https://imgur.com/dWgargZ.png"/>
+
+# Detection
+
+This project can easily be detected by checking for dxgi.dll IAT hooks on EtwEventWrite and stack walking of threads that execute EtwEventWrite. Inserting
+a pml4e into a pml4 is also detected as the PFN database contains all of the PFNs for a specific process and if a new PML4E is inserted it will
+be pointing at other processes PFNs. 
