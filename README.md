@@ -29,10 +29,18 @@ This makes it so when you stream the game in discord or OBS the rendering is str
 
 # Detection
 
-This project can easily be detected by checking for dxgi.dll IAT hooks on EtwEventWrite and stack walking of threads that execute EtwEventWrite. Inserting
-a pml4e into a pml4 is also detected as the PFN database contains all of the PFNs for a specific process and if a new PML4E is inserted it will
-be pointing at other processes page tables and thus other processes PFNs. This project also does not spoof return addresses so everytime the CPU executes the internal module it is leaving
+### dxgi.dll checks
+This project can easily be detected by checking for dxgi.dll IAT hooks on EtwEventWrite and stack walking of threads that execute EtwEventWrite. 
+
+### PFN Database Checks
+Inserting a pml4e into a pml4 is also detected as the PFN database contains all of the PFNs for a specific process and if a new PML4E is inserted it will
+be pointing at other processes page tables and thus other processes PFNs.
+
+### Stack Walk and Return Address Checks
+This project also does not spoof return addresses so everytime the CPU executes the internal module it is leaving
 return addresses on the stack which do not land inside of legit modules text sections. Simply APC's will catch this and BattlEye already does this. 
+
+### Page Table Checks
 
 You can also construct a view of executable memory given the page tables of a process. If there is executable pages outside of a loaded modules .text sections
 they can become apparent easily. Since the CPU is constantly executing the cheat it is unlikely that it will be paged to disk. 
