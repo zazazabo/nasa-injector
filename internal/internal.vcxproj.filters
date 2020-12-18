@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="no_alloc\no_alloc.hpp">
+      <Filter>headers\no_alloc</Filter>
+    </ClInclude>
+    <ClInclude Include="no_crt\no_crt.h">
+      <Filter>headers\no_crt</Filter>
+    </ClInclude>
+    <ClInclude Include="no_imports.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="no_gui\no_gui.h">
+      <Filter>headers\no_gui</Filter>
+    </ClInclude>
+    <ClInclude Include="no_gui\no_state_saver.h">
+      <Filter>headers\no_gui</Filter>
+    </ClInclude>
+    <ClInclude Include="no_gui\no_shaders.h">
+      <Filter>headers\no_gui</Filter>
+    </ClInclude>
+    <ClInclude Include="image_base.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="direct.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{7aa51226-3d6f-435f-a764-9cca554e94be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{24b4469c-bcb2-4707-8486-f6e879654ae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\no_gui">
+      <UniqueIdentifier>{f2eca2b3-14df-46b7-a038-9476c6b9e7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\no_crt">
+      <UniqueIdentifier>{272d0338-6a74-47b1-b08f-16f4ea9bf110}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\no_alloc">
+      <UniqueIdentifier>{9a4972bd-755f-4d8c-ab1a-3fa628113da4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\no_alloc">
+      <UniqueIdentifier>{ddbfbb9f-faf5-4c70-947f-4b157336dfd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\no_crt">
+      <UniqueIdentifier>{2ebed959-7c32-4b6e-883f-eb1f13647ef9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\no_gui">
+      <UniqueIdentifier>{8e9f1673-a856-4c60-a04c-3b60a5dd1cfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="no_gui\no_gui.cpp">
+      <Filter>source\no_gui</Filter>
+    </ClCompile>
+    <ClCompile Include="no_gui\no_state_saver.cpp">
+      <Filter>source\no_gui</Filter>
+    </ClCompile>
+    <ClCompile Include="no_crt\no_crt.cpp">
+      <Filter>source\no_crt</Filter>
+    </ClCompile>
+    <ClCompile Include="no_alloc\no_alloc.cpp">
+      <Filter>source\no_alloc</Filter>
+    </ClCompile>
+    <ClCompile Include="present.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="image_base.asm">
+      <Filter>source</Filter>
+    </MASM>
+  </ItemGroup>
+</Project>
