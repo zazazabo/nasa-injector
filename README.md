@@ -30,7 +30,6 @@ return addresses on the stack which do not land inside of legit modules text sec
 You can also construct a view of executable memory given the page tables of a process. If there is executable pages outside of a loaded modules .text sections
 they can become apparent easily. Since the CPU is constantly executing the cheat it is unlikely that it will be paged to disk. 
 
-# Credit
-[ChaosLeader](https://www.unknowncheats.me/forum/members/168188.html) - no_gui is a cleaned up version of this renderer
-
-[JustasMasiulis](https://github.com/JustasMasiulis/lazy_importer) - no_import.h is lazy importer
+### Credit
+* [ChaosLeader](https://www.unknowncheats.me/forum/members/168188.html) - no_gui is a cleaned up version of this renderer
+* [JustasMasiulis](https://github.com/JustasMasiulis/lazy_importer) - no_import.h is lazy importer
