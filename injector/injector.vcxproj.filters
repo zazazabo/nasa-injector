@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\physmeme">
+      <UniqueIdentifier>{1ac5eac2-540f-4299-b247-6e474f0663c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\kernel_ctx">
+      <UniqueIdentifier>{c8a6138a-6610-4ee7-b784-31950a4b2510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{8f28f4f1-a8df-4c81-b593-10894d062d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\pe_image">
+      <UniqueIdentifier>{59ffe31b-8d86-44de-b8b8-d9e625fcf14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\mem_ctx">
+      <UniqueIdentifier>{adc0b7b7-1d99-4ac9-a713-e60536555241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\mem_ctx">
+      <UniqueIdentifier>{afd76729-9a8c-4513-aa69-4128b87324b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\kernel_ctx">
+      <UniqueIdentifier>{76959bd1-9765-439c-8c3e-92a8147e8345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\injector_ctx">
+      <UniqueIdentifier>{18c7fd24-0e1f-4dd5-96c8-c1173a7f1981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\injector_ctx">
+      <UniqueIdentifier>{ec029218-ad17-41b5-995a-7422a1c9a7d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="injector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_ctx\kernel_ctx.cpp">
+      <Filter>Source Files\kernel_ctx</Filter>
+    </ClCompile>
+    <ClCompile Include="pe_image\pe_image.cpp">
+      <Filter>Source Files\pe_image</Filter>
+    </ClCompile>
+    <ClCompile Include="mem_ctx\mem_ctx.cpp">
+      <Filter>Source Files\mem_ctx</Filter>
+    </ClCompile>
+    <ClCompile Include="injector_ctx\injector_ctx.cpp">
+      <Filter>Source Files\injector_ctx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="physmeme\physmeme.hpp">
+      <Filter>Header Files\physmeme</Filter>
+    </ClInclude>
+    <ClInclude Include="util\hook.hpp">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\nt.hpp">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.hpp">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="pe_image\pe_image.h">
+      <Filter>Source Files\pe_image</Filter>
+    </ClInclude>
+    <ClInclude Include="mem_ctx\mem_ctx.hpp">
+      <Filter>Header Files\mem_ctx</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel_ctx\kernel_ctx.h">
+      <Filter>Header Files\kernel_ctx</Filter>
+    </ClInclude>
+    <ClInclude Include="injector_ctx\injector_ctx.hpp">
+      <Filter>Header Files\injector_ctx</Filter>
+    </ClInclude>
+    <ClInclude Include="loadup.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="raw_driver.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="direct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
