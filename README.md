@@ -3,7 +3,7 @@
 This project was created 6-7 months ago (summer of 2020), and was created before PTM and VDM. The code is not very clean, but it does the job. This
 project does not map any drivers into the kernel, it does however use a vulnerable driver (any that exposes physical read/write). The project
 is designed to inject a dll into a dxd11 process without actually allocating any memory in the process or in the kernel, it simply maps
-already allocated memory into the kernel and thus no VAD entries are created. This means NtQueryVirtualMemory will not show the dll's memory.
+already allocated memory into the game and thus no VAD entries are created. This means NtQueryVirtualMemory will not show the dll's memory.
 
 # Key Features
 
