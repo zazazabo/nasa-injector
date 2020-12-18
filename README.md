@@ -17,3 +17,5 @@ to point to the internal.dll entry point.
 <img src="https://imgur.com/n6BJhJj.png"/>
 
 This makes it so when you stream the game in discord or OBS the rendering is stream proof because we draw after discord and OBS captures the screen.
+
+<img src="https://imgur.com/dWgargZ.png"/>
