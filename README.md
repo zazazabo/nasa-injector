@@ -15,3 +15,5 @@ process. If you take a look at dxgi.dll present you can see that there is a EtwE
 to point to the internal.dll entry point.
 
 <img src="https://imgur.com/n6BJhJj.png"/>
+
+This makes it so when you stream the game in discord or OBS the rendering is stream proof because we draw after discord and OBS captures the screen.
