@@ -26,3 +26,6 @@ This project can easily be detected by checking for dxgi.dll IAT hooks on EtwEve
 a pml4e into a pml4 is also detected as the PFN database contains all of the PFNs for a specific process and if a new PML4E is inserted it will
 be pointing at other processes PFNs. This project also doesnt not spoof return addresses so everything the CPU executes the internal module it is leaving
 return addresses on the stack. 
+
+You can also create ranges of executable memory given the page tables of a process. If there is executable pages outside of a loaded modules .text sections
+they can become apparent easily. Since the CPU is constantly executing the cheat it is unlikely that it will be paged to disk. 
